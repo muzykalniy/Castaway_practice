@@ -1,11 +1,14 @@
 .header__nav {
 }
 .nav {
-	font-size: 18px;
+	font-size: 17px;
+	line-height: 159%;
+	font-weight: 400;
 }
 .nav__list {
 	display: flex;
-	column-gap: 30px;
+	column-gap: 40px;
 }
 .active {
+	color: var(--accent-link);
 }

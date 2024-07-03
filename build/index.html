@@ -4,22 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
+		<title>Castaway</title>
 		<link rel="stylesheet" href="./css/main.css" />
-
-		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
 	</head>
 
 	<body>
 		<header class="header">
 			<div class="container">
 				<div class="header__row">
-					<div class="logo">Название</div>
+					<div class="logo">
+						<picture>
+							<source srcset="./img/logo/logo-header.webp 1x, ./img/logo/logo-header@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/logo/logo-header.png 1x, ./img/logo/logo-header@2x.png 2x" type="image/png" />
+							<img src="./img/logo/logo-header.png" srcset="./img/logo/logo-header.png" alt="Logo header" />
+						</picture>
+					</div>
 					<nav class="header__nav nav">
 						<ul class="nav__list">
-							<li><a href="index.html" class="active">Главная</a></li>
-							<li><a href="docs.html">Документация</a></li>
+							<li><a href="#!" class="active">Home</a></li>
+							<li><a href="#!">Episode</a></li>
+							<li><a href="#!">About</a></li>
+							<li><a href="#!">Contact</a></li>
 						</ul>
 					</nav>
 					<button class="mobile-nav-btn">
@@ -35,22 +40,41 @@
 			</ul>
 		</div>
 
-		<main class="docs">
-			<section>
-				<div class="container">
-					<h1 class="title-1">Gulp сборка для верстки сайтов</h1>
-					<p>Понятная Gulp сборка которая ускорит твою верстку в&#160;разы.</p>
-					<p>Документация по&#160;возможностям с&#160;примерами использования <a href="./docs.html">здесь</a>.</p>
-
-					<!-- Теги img теперь можно писать в несколько строк, ошибки не будет -->
+		<section class="hero">
+			<div class="container">
+				<div class="hero__wrapper">
 					<picture>
-						<source srcset="./img/project-02.webp 1x, ./img/project-02@2x.webp 2x" type="image/webp" />
-						<source srcset="./img/project-02.jpg 1x, ./img/project-02@2x.jpg 2x" type="image/jpeg" />
-						<img src="./img/project-02.jpg" alt="" />
+						<source srcset="./img/hero/hero-img.webp 1x, ./img/hero/hero-img@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/hero/hero-img.png 1x, ./img/hero/hero-img@2x.png 2x" type="image/png" />
+						<img class="hero__img" src="./img/hero/hero-img.png" srcset="./img/hero/hero-img.png" alt="Hero image" />
 					</picture>
+					<div class="hero__title-wrapper">
+						<h1 class="hero__title">Take your podcast to&#160;the <span class="hero__abs-text">next</span> <span class="hero__abs-text--weight">level</span></h1>
+						<div class="hero__links-wrapper">
+							<p>Listen on</p>
+							<ul class="hero__icons-list">
+								<li>
+									<a href="#!"><img src="./img/favicons/IMAGE-4.svg" alt=""/></a>
+								</li>
+								<li>
+									<a href="#!"><img src="./img/favicons/IMAGE-3.svg" alt=""/></a>
+								</li>
+								<li>
+									<a href="#!"><img src=" ./../../img/favicons/IMAGE-2.svg" alt=""/></a>
+								</li>
+								<li>
+									<a href="#!"><img src="./img/favicons/IMAGE-1.svg" alt=""/></a>
+								</li>
+								<li>
+									<a href="#!"><img src="./img/favicons/IMAGE.svg" alt=""/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</section>
-		</main>
+			</div>
+		</section>
+		<main class="main"></main>
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__copyright">

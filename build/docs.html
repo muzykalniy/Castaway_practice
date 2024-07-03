@@ -15,11 +15,19 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__row">
-					<div class="logo">Название</div>
+					<div class="logo">
+						<picture>
+							<source srcset="./img/logo/logo-header.webp 1x, ./img/logo/logo-header@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/logo/logo-header.png 1x, ./img/logo/logo-header@2x.png 2x" type="image/png" />
+							<img src="./img/logo/logo-header.png" srcset="./img/logo/logo-header.png" alt="Logo header" />
+						</picture>
+					</div>
 					<nav class="header__nav nav">
 						<ul class="nav__list">
-							<li><a href="index.html" class="active">Главная</a></li>
-							<li><a href="docs.html">Документация</a></li>
+							<li><a href="#!" class="active">Home</a></li>
+							<li><a href="#!">Episode</a></li>
+							<li><a href="#!">About</a></li>
+							<li><a href="#!">Contact</a></li>
 						</ul>
 					</nav>
 					<button class="mobile-nav-btn">
