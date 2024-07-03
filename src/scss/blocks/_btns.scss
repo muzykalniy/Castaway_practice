@@ -17,9 +17,9 @@
     color: var(--text-color);
 
     transition:
-        background-color 0.2s ease-in,
-        color 0.2s ease-in,
-        transform 0.2s ease-in;
+        all 0.2s ease-in,
+        0.2s ease-in,
+        0.2s ease-in;
     &:hover,
     &:focus {
         transform: scale(1.02);
@@ -53,9 +53,9 @@
     color: var(--text-color);
 
     transition:
-        background-color 0.2s ease-in,
-        color 0.2s ease-in,
-        transform 0.2s ease-in;
+        all 0.2s ease-in,
+        0.2s ease-in,
+        0.2s ease-in;
     &:hover,
     &:focus {
         transform: scale(1.02);

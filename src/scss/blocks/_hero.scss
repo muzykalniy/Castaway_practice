@@ -9,6 +9,10 @@
 }
 .hero__img {
     filter: contrast(110%) brightness(1.1) saturate(1.2);
+    transition: all 0.2s ease-in;
+    &:hover {
+        transform: scale(1.02);
+    }
 }
 .hero__title-wrapper {
     max-width: 50%;
@@ -56,7 +60,7 @@
         line-height: 160%;
     }
 }
-.hero__icons-list {
+.icons-list {
     display: flex;
     // justify-content: space-between;
     align-items: center;

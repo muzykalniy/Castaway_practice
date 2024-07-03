@@ -5,10 +5,16 @@
 }
 
 .icon {
-	// fill: transparent;
-	// stroke: transparent;
-	width: 62px;
-	height: 62px;
+	fill: transparent;
+	stroke: white;
+	width: 24px;
+	height: 24px;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		stroke: var(--accent);
+		transform: scale(1.1);
+	}
 }
 
 // .icon--heart-line {
