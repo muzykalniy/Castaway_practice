@@ -10,6 +10,7 @@
 }
 .collection__img {
     align-self: stretch;
+    filter: contrast(110%) brightness(1.1) saturate(1.2);
     & img {
         object-fit: cover;
         width: 100%;
@@ -22,13 +23,6 @@
 
 .collection__subtitle {
     margin-bottom: 18px;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 159%;
-    color: var(--accent-link);
-    &:hover {
-        opacity: 0.8;
-    }
 }
 .collection__item-title {
     margin-bottom: 28px;
@@ -39,10 +33,6 @@
 }
 .collection__item-content {
     margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 150%;
-    color: var(--accent);
 }
 .btn {
 }

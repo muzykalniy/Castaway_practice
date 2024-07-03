@@ -1,0 +1,34 @@
+.about {
+    padding: 100px 20px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 94px;
+}
+.about__wrapper-content {
+    flex-basis: 50%;
+}
+
+.about__subtitle {
+    margin-bottom: 10px;
+}
+.about__title {
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 122%;
+    letter-spacing: 0.04em;
+}
+.about__content {
+}
+.about__img {
+    filter: contrast(110%) brightness(1.1) saturate(1.1);
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

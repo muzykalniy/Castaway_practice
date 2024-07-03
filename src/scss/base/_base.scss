@@ -32,3 +32,19 @@ pre.code {
 	padding: 1rem;
 	border-radius: 4px;
 }
+
+.subtitle {
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 159%;
+	color: var(--accent-link);
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.content {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 150%;
+	color: var(--accent);
+}
