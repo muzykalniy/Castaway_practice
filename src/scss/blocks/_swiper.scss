@@ -1,0 +1,36 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    background-color: var(--accent) !important;
+    opacity: 1 !important; // отменяем опасити что все кружки сделать одинакового цвета
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-link) !important;
+} // задаем свойства для активного кружка
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+} //  отступы слева/справа 16пкс, значит делим на 2 и получаем 8
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -100px !important;
+} // чтобы свайпер паджинейшн лежал четко внутри слайдер

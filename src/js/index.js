@@ -1,11 +1,25 @@
-// Галерея и лайтбоксы от Fancybox
-import { Fancybox } from '@fancyapps/ui';
-import '@fancyapps/ui/dist/fancybox/fancybox.css';
+// import Swiper bundle with all modules installed
+import Swiper from "swiper/bundle";
 
-Fancybox.bind('[data-fancybox]', {
-	// Your custom options
+// import styles bundle
+import "swiper/css/bundle";
+
+// init Swiper:
+var swiper = new Swiper(".mySwiper", {
+  effect: "cube",
+  grabCursor: true,
+  loop: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
 
 // Мобильная навигация
-import mobileNav from './modules/mobile-nav.js';
+import mobileNav from "./modules/mobile-nav.js";
 mobileNav();

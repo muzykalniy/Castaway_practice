@@ -7,7 +7,14 @@
         </div>
 
         <div class="collection__items-wrapper">
-            @@loop('blocks/collection-item.html', './data/collection.json')
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    @@loop('blocks/collection-item.html', './data/collection.json')
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
         </div>
     </div>
 </section>
