@@ -7,7 +7,7 @@
         </div>
 
         <div class="collection__items-wrapper">
-            @@include('blocks/collection-item.html')
+            @@loop('blocks/collection-item.html', './data/collection.json')
         </div>
     </div>
 </section>
