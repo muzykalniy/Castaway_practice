@@ -1,0 +1,64 @@
+.form-section {
+    padding: 100px 20px;
+}
+
+.form__wrapper {
+    padding: 60px 60px 80px 60px;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    background: var(--collection-item-bg);
+    &::before {
+        content: "";
+
+        position: absolute;
+        left: -40px;
+        top: 346px;
+        width: 100%;
+        height: 100%;
+
+        background-image: url("./../../img/absolute/absolute-form.png");
+        background-repeat: no-repeat;
+    }
+}
+.form__content-wrapper {
+    flex-basis: 50%;
+}
+.form__subtitle {
+    margin-bottom: 10px;
+}
+.form__title {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+}
+.form__wrapper-input {
+    flex-basis: 50%;
+    padding-left: 76px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+.form {
+    width: 100%;
+}
+.form__input {
+    padding: 26px 19px;
+    width: 100%;
+    height: 100%;
+
+    height: 82px;
+    border: 1px solid #191919;
+    border-radius: 6px;
+    background: var(--page-bg);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
