@@ -64,6 +64,9 @@
     &:active {
         background-color: #2f4f4f;
     }
+    @include mobile {
+        margin-bottom: 28px;
+    }
 }
 
 .about__btn {

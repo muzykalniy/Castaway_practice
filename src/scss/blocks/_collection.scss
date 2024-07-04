@@ -1,17 +1,28 @@
 .collection {
     padding: 100px 20px 160px;
+    @include mobile {
+        padding: 100px 20px 100px;
+    }
 }
 
 .collection__header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mobile {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
 }
 .collection__title {
     font-weight: 400;
     font-size: 64px;
     line-height: 124%;
     letter-spacing: 0.05em;
+    @include mobile {
+        font-size: 50px;
+    }
 }
 
 .collection__items-wrapper {
@@ -23,4 +34,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+    @include mobile {
+        padding-top: 60px;
+    }
 }
