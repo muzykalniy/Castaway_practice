@@ -72,6 +72,11 @@
 .about__btn {
     margin-bottom: 20px;
     transition: transform 0.2s ease-in;
+    @include mobile {
+        img {
+            width: 70%;
+        }
+    }
     &:hover,
     &:focus {
         transform: scale(1.02);
