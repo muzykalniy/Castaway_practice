@@ -1,14 +1,6 @@
 .footer {
 	padding: 100px 20px 116px 20px;
 	background-color: var(--page-bg);
-
-	a {
-		color: var(--link-color);
-		text-decoration: none;
-		&:hover {
-			color: var(--accent-link);
-		}
-	}
 }
 
 .footer__wrapper {
@@ -18,7 +10,7 @@
 }
 .footer__header-wrapper {
 }
-.logo {
+.footer__logo {
 	width: 224px;
 	height: 46px;
 	margin-bottom: 23px;

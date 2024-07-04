@@ -7,8 +7,18 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	& a:hover {
-		color: var(--accent-link);
+	& a::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		width: 0;
+		height: 3px;
+		background-color: var(--accent-link);
+		transition: width 0.3s ease-in-out;
+	}
+	& a:hover::after {
+		width: 40px; /* исходная длина + px */
 	}
 }
 

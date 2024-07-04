@@ -17,7 +17,9 @@ img {
 }
 
 a {
+	position: relative;
 	color: var(--link-color);
+	text-decoration: none;
 }
 
 code {

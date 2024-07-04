@@ -1,22 +1,55 @@
 .hero {
     padding: 40px 20px;
+    @include mobile {
+        padding: 20px 20px;
+    }
 }
 .hero__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
 }
 .hero__img {
+    position: relative;
+    box-shadow: 0px 25px 25px -15px rgba(0, 0, 0, 0.9);
     filter: contrast(110%) brightness(1.1) saturate(1.2);
     transition: all 0.2s ease-in;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        left: -25px;
+        top: -23px;
+        width: 100%;
+        height: 100%;
+
+        background-image: url("./../../img/absolute/absolute-header.png");
+        background-repeat: no-repeat;
+    }
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
     &:hover {
         transform: scale(1.02);
     }
 }
 .hero__title-wrapper {
-    max-width: 50%;
+    flex-basis: 50%;
     position: relative;
+    @include mobile {
+        flex-basis: 100%;
+    }
 }
 .hero__title {
     margin-bottom: 74px;
@@ -24,12 +57,22 @@
     font-size: 70px;
     line-height: 126%;
     letter-spacing: 0.05em;
+    @include mobile {
+        margin-bottom: 34px;
+        font-size: 40px;
+        text-align: center;
+    }
 }
 .hero__abs-text {
     font-weight: 400;
     font-size: 75px;
     line-height: 117%;
     letter-spacing: 0.04em;
+    @include mobile {
+        font-size: 55px;
+        line-height: 117%;
+    }
+
     &::after {
         content: "";
 
@@ -41,6 +84,12 @@
 
         background-image: url("./../../img/absolute/Vector.svg");
         background-repeat: no-repeat;
+        @include mobile {
+            left: 60px;
+            top: 175px;
+            width: 120px;
+            height: 11px;
+        }
     }
 }
 .hero__abs-text--weight {
@@ -48,10 +97,19 @@
     font-size: 80px;
     line-height: 110%;
     letter-spacing: 0.04em;
+    @include mobile {
+        font-size: 65px;
+        font-weight: 600;
+    }
 }
 .hero__links-wrapper {
-    max-width: 60%;
+    flex-basis: 60%;
     padding: 0px 22px;
+
+    @include mobile {
+        flex-basis: 100%;
+        text-align: center;
+    }
 
     p {
         margin-bottom: 16px;
@@ -70,5 +128,8 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+    @include mobile {
+        justify-content: center;
     }
 }
