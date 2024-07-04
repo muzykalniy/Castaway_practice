@@ -1,5 +1,8 @@
 .form-section {
     padding: 100px 20px;
+    @include mobile {
+        padding: 60px 20px;
+    }
 }
 
 .form__wrapper {
@@ -12,6 +15,12 @@
     border-radius: 32px;
     background: var(--item-bg);
     box-shadow: 0px 25px 25px -15px rgba(0, 0, 0, 0.9);
+    @include mobile {
+        padding: 40px 40px 60px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
     &::before {
         content: "";
 
@@ -23,19 +32,32 @@
 
         background-image: url("./../../img/absolute/absolute-form.png");
         background-repeat: no-repeat;
+        @include mobile {
+            left: -20px;
+            top: 585px;
+        }
     }
 }
 .form__content-wrapper {
     flex-basis: 50%;
+    @include mobile {
+        flex-basis: 100%;
+    }
 }
 .form__subtitle {
     margin-bottom: 10px;
+    @include mobile {
+        margin-bottom: 30px;
+    }
 }
 .form__title {
     font-weight: 400;
     font-size: 72px;
     line-height: 110%;
     letter-spacing: 0.04em;
+    @include mobile {
+        font-size: 52px;
+    }
 }
 .form__wrapper-input {
     flex-basis: 50%;
@@ -46,6 +68,11 @@
     justify-content: space-between;
     align-items: start;
     gap: 20px;
+    @include mobile {
+        flex-basis: 100%;
+        padding-left: unset;
+        gap: 40px;
+    }
 }
 .form {
     width: 100%;

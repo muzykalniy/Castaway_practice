@@ -1,12 +1,19 @@
 .footer {
 	padding: 100px 20px 116px 20px;
 	background-color: var(--page-bg);
+	@include mobile {
+		padding: 60px 20px 96px 20px;
+	}
 }
 
 .footer__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
+	@include mobile {
+		flex-direction: column;
+		gap: 40px;
+	}
 }
 .footer__header-wrapper {
 }
@@ -14,6 +21,9 @@
 	width: 224px;
 	height: 46px;
 	margin-bottom: 23px;
+	@include mobile {
+		margin-bottom: unset;
+	}
 }
 .footer__socials {
 	display: flex;
@@ -28,6 +38,11 @@
 	justify-content: space-between;
 	align-items: start;
 	gap: 16px;
+	@include mobile {
+		flex-basis: 100%;
+		gap: 40px;
+		flex-wrap: wrap;
+	}
 }
 .footer__nav {
 	.nav__list {
@@ -35,6 +50,9 @@
 		flex-direction: column;
 		align-items: start;
 		gap: 10px;
+		@include mobile {
+			gap: 30px;
+		}
 	}
 }
 
@@ -48,6 +66,9 @@
 }
 .footer__icons-list {
 	flex-basis: 55%;
+	@include mobile {
+		flex-basis: 100%;
+	}
 }
 .icons-list {
 }
